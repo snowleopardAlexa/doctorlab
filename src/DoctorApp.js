@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Row, Col, Container } from 'react-bootstrap';
 
-function DoctorList() {
+function DoctorApp() {
   return (
     <div className="App">
         {/* Navbar */}
@@ -19,4 +19,4 @@ function DoctorList() {
   );
 }
 
-export default DoctorList;
+export default DoctorApp;

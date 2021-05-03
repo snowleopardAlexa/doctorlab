@@ -1,9 +1,13 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
 
 function DoctorList() {
   return (
     <div className="App">
-        <h2>Doctor List</h2>
+        {/* Navbar  */}
+        <Navbar bg="primary">
+        <Navbar.Brand style={{color: '#fff', fontWeight: 'bold'}}>DoctorLab</Navbar.Brand>
+       </Navbar>
     </div>
   );
 }

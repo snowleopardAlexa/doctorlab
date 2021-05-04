@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
+import DoctorList from './DoctorList';
+
 import { Navbar, Row, Col, Container } from 'react-bootstrap';
 
 function DoctorApp() {
 
   const initialPatients = [
-    {id: 1, name: "Alexa Slomski", age: 55, disease: "cancer", cured: false},
-    {id: 1, name: "Agata Pazdur", age: 25, disease: "uclers", cured: true},
-    {id: 1, name: "Anna Burdzinski", age: 35, disease: "diverticulosis", cured: false}
+    {id: 1, name: "Alexa Slomski", age: 65, disease: "colon cancer", cured: true},
+    {id: 2, name: "Agata Pazdur", age: 25, disease: "uclers", cured: true},
+    {id: 3, name: "Anna Burdzinski", age: 35, disease: "diverticulosis", cured: false}
   ];
 
-  const [patients, setPatient] = useState([initialPatients]);
+  const [patients, setPatients] = useState(initialPatients);
 
   return (
     <div className="App">

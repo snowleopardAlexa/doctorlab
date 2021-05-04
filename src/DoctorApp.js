@@ -20,13 +20,6 @@ function DoctorApp() {
         <Navbar.Brand style={{color: '#fff', fontWeight: 'bold'}}>DoctorLab</Navbar.Brand>
        </Navbar>
        <DoctorList patients={patients} />
-       {/* Grid */}
-       <Container>  
-        <Row>
-         <Col>Add patient</Col>
-         <Col>patient info</Col>
-       </Row>
-       </Container>
     </div>
   );
 }

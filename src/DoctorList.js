@@ -6,7 +6,7 @@ function DoctorList(props) {
         <div>
             {props.patients.map(patient => (
             // Grid 
-              <Container>  
+              <Container className="mt-4">  
                <Row>
                 <Col>{patient.name}</Col>
                 <Col>{patient.age}</Col>

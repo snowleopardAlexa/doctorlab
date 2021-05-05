@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import DoctorList from './DoctorList';
+import DoctorForm from './DoctorForm';
 
-import { Navbar, Row, Col, Container } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 
 function DoctorApp() {
 
@@ -19,6 +20,7 @@ function DoctorApp() {
         <Navbar bg="primary">
         <Navbar.Brand style={{color: '#fff', fontWeight: 'bold'}}>DoctorLab</Navbar.Brand>
        </Navbar>
+       <DoctorForm />
        <DoctorList patients={patients} />
     </div>
   );

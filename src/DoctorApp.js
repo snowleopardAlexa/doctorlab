@@ -14,13 +14,19 @@ function DoctorApp() {
 
   const [patients, setPatients] = useState(initialPatients);
 
+  // form - name
+  const addPatientData = newPatientDataText => {
+    setPatients([...patients, {id: 4, name: newPatientDataText, cured: false }]);
+  };
+
+
   return (
     <div className="App">
         {/* Navbar */}
         <Navbar bg="primary">
         <Navbar.Brand style={{color: '#fff', fontWeight: 'bold'}}>DoctorLab</Navbar.Brand>
        </Navbar>
-       <DoctorForm />
+       <DoctorForm addPatientData={addPatientData} />
        <DoctorList patients={patients} />
     </div>
   );
